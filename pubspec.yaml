@@ -1,7 +1,7 @@
 name: hg_notification_firebase
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/HoangKimToi/HGNotification
 
 false_secrets:
   - /example/lib/firebase_options.dart
