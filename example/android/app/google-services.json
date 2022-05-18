@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "910734901903",
+    "project_id": "hg-notification",
+    "storage_bucket": "hg-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910734901903:android:ac82571ed70b4e69c426fa",
+        "android_client_info": {
+          "package_name": "com.toihk.hg_notification_firebase_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910734901903-445oop5t89ej4j93h6irfnqa829ibpor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrrDFD_iKOyj8wbPoI9JNEQIarR1-UXVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910734901903-445oop5t89ej4j93h6irfnqa829ibpor.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "910734901903-aan7o6nsrkkmqu72c9urcpuipti54ige.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.toihk.hgNotificationFirebaseExample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
