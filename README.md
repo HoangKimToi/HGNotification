@@ -1,6 +1,6 @@
 # hg_notification_firebase
 
-A new Flutter project.
+Link plugin: https://pub.dev/packages/hg_notification_firebase
 
 ## Getting Started
 
