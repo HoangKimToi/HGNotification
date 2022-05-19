@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hg_notification_firebase_example/utils/globals.dart';
 
 void showSnackBar(String text, {
-  Duration duration = const Duration(seconds: 2)
+  Duration duration = const Duration(seconds: 20)
 }) {
   Globals.scaffoldMessengerKey.currentState?..clearSnackBars()
       ..showSnackBar(

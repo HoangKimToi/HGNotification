@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
         body: ListView(
           padding: const EdgeInsets.all(15),
           children: [
-            if (Globals.fcmToken != null) Text(Globals.fcmToken!),
+            // if (Globals.fcmToken != null) Text(Globals.fcmToken!),
             const SizedBox(height: 15),
             EasyContainer(
               onTap: () async {
