@@ -87,11 +87,17 @@ class _SendSampleNotification extends StatelessWidget {
   }) : super(key: key);
 
   Future<void> _sendNotification() async {
+    Map<String, String?> payload = {
+      "title": notificationTitle,
+      "body": notificationBody
+    };
+
     await HGNotificationFirebase.sendNotification(
       cloudMessagingServerKey: Constants.cloudMessagingServerKey,
       fcmTokens: [Globals.fcmToken!],
       title: notificationTitle!,
       body: notificationBody,
+      payload: payload,
       imageUrl:
       isNullOrBlank(notificationImageUrl) ? null : notificationImageUrl,
     );

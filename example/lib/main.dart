@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hg_notification_firebase/hg_notification_firebase.dart';
+import 'package:hg_notification_firebase_example/screens/detail_screen.dart';
 import 'package:hg_notification_firebase_example/screens/splash_screen.dart';
 import 'package:hg_notification_firebase_example/utils/app_theme.dart';
 import 'package:hg_notification_firebase_example/utils/globals.dart';
@@ -38,11 +39,14 @@ class _MyApp extends StatelessWidget {
         );
       },
       onTap: (navigatorState, appState, payload) {
-        showSnackBar('appState: $appState\npayload: $payload');
         log(
           id,
           msg: "Notification tapped with $appState & payload $payload",
         );
+
+        if (Globals.navigatorKey.currentContext != null) {
+          Navigator.pushNamed(Globals.navigatorKey.currentContext!, DetailScreen.id, arguments: payload);
+        }
       },
 
       // Save the device's fcmToken.

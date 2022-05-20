@@ -115,7 +115,7 @@ class HGNotificationFirebase extends StatefulWidget {
           ...?notificationMeta,
         },
         "data": {
-          "click_action": "FLUTTER_NOTIFICATION_CLICK",
+          "click_action": "HG_NOTIFICATION_CLICK",
           ...?payload,
         },
       })

@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:hg_notification_firebase_example/screens/detail_screen.dart';
 import 'package:hg_notification_firebase_example/screens/home_screen.dart';
 import 'package:hg_notification_firebase_example/screens/splash_screen.dart';
 import 'package:hg_notification_firebase_example/utils/helper.dart';
@@ -16,6 +17,12 @@ class RouteGenerator {
         return _route(const SplashScreen());
       case HomeScreen.id:
         return _route(const HomeScreen());
+      case DetailScreen.id:
+        if (settings.arguments != null) {
+          final payload = settings.arguments as Map<String, dynamic>;
+          return _route(DetailScreen(payload: payload));
+        }
+        return _errorRoute(settings.name);
       default:
         return _errorRoute(settings.name);
     }
