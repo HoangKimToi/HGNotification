@@ -28,6 +28,8 @@ class _MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HGNotificationFirebase(
+      // File path in android/app/src/main/res/raw
+      customSound: "notification",
       defaultNavigatorKey: Globals.navigatorKey,
       onOpenNotificationArrive: (_, payload) {
         log(
@@ -42,6 +44,8 @@ class _MyApp extends StatelessWidget {
           msg: "Notification tapped with $appState & payload $payload",
         );
       },
+
+      // Save the device's fcmToken.
       onFCMTokenInitialize: (_, token) => Globals.fcmToken = token,
       onFCMTokenUpdate: (_, token) => Globals.fcmToken = token,
       child: MaterialApp(

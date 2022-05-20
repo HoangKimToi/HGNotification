@@ -29,15 +29,9 @@ class HGNotificationFirebase extends StatefulWidget {
   ///
   /// iOS: Add the audio file in Runner/Resources/___audio_file_here___
   ///
-  /// .
+  /// Edit the keep file in the folder ..res/raw of android
+  /// https://stackoverflow.com/questions/59783904/flutter-local-notification-custom-sound-doesnt-work-path-issue
   ///
-  /// Add the default channelId in the AndroidManifest file in your project.
-  ///
-  ///   <meta-data
-  ///      android:name="com.google.firebase.messaging.default_notification_channel_id"
-  ///      android:value="ID" />
-  ///
-  /// Pass in the same ID in the [channelId] parameter.
   /// {@endtemplate}
   final String? customSound;
 
